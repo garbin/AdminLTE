@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Flot Charts</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -24,7 +25,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-blue sidebar-mini">
+  <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
       <header class="main-header">
@@ -251,15 +252,17 @@
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
+                    <div class="row">
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Followers</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Sales</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Friends</a>
+                      </div>
+                    </div><!-- /.row -->
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
@@ -402,6 +405,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
                 <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
                 <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
                 <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
@@ -491,8 +495,8 @@
                   <i class="fa fa-bar-chart-o"></i>
                   <h3 class="box-title">Line Chart</h3>
                   <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                 </div>
                 <div class="box-body">
@@ -506,8 +510,8 @@
                   <i class="fa fa-bar-chart-o"></i>
                   <h3 class="box-title">Full Width Area Chart</h3>
                   <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                 </div>
                 <div class="box-body">
@@ -524,8 +528,8 @@
                   <i class="fa fa-bar-chart-o"></i>
                   <h3 class="box-title">Bar Chart</h3>
                   <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                 </div>
                 <div class="box-body">
@@ -539,8 +543,8 @@
                   <i class="fa fa-bar-chart-o"></i>
                   <h3 class="box-title">Donut Chart</h3>
                   <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                 </div>
                 <div class="box-body">
@@ -554,7 +558,7 @@
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.2.1
+          <b>Version</b> 2.3.0
         </div>
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
@@ -582,7 +586,7 @@
                 </a>
               </li>
               <li>
-               <a href="javascript::;">
+                <a href="javascript::;">
                   <i class="menu-icon fa fa-user bg-yellow"></i>
                   <div class="menu-info">
                     <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>

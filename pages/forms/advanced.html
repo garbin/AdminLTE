@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Advanced form elements</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -34,7 +35,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-blue sidebar-mini">
+  <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
       <header class="main-header">
@@ -261,15 +262,17 @@
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
+                    <div class="row">
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Followers</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Sales</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Friends</a>
+                      </div>
+                    </div><!-- /.row -->
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
@@ -412,6 +415,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
                 <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
                 <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
                 <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
@@ -476,8 +480,8 @@
             <div class="box-header with-border">
               <h3 class="box-title">Select2</h3>
               <div class="box-tools pull-right">
-                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
               </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -676,7 +680,7 @@
                   <div class="form-group">
                     <label>Date range button:</label>
                     <div class="input-group">
-                      <button class="btn btn-default pull-right" id="daterange-btn">
+                      <button type="button" class="btn btn-default pull-right" id="daterange-btn">
                         <i class="fa fa-calendar"></i> Date range picker
                         <i class="fa fa-caret-down"></i>
                       </button>
@@ -793,7 +797,7 @@
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.2.1
+          <b>Version</b> 2.3.0
         </div>
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
@@ -1011,18 +1015,18 @@
         $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
         //Date range as a button
         $('#daterange-btn').daterangepicker(
-            {
-              ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-              },
-              startDate: moment().subtract(29, 'days'),
-              endDate: moment()
-            },
+                {
+                  ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                  },
+                  startDate: moment().subtract(29, 'days'),
+                  endDate: moment()
+                },
         function (start, end) {
           $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
         }

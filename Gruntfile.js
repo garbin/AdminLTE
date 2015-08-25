@@ -102,7 +102,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'build/img/',
-          src: ['**/*.{png,jpg,gif,svg}'],
+          src: ['**/*.{png,jpg,gif,svg,jpeg}'],
           dest: 'dist/img/'
         }]
       }
@@ -124,6 +124,7 @@ module.exports = function (grunt) {
       }
     },
 
+    // Validate CSS files
     csslint: {
       options: {
         csslintrc: 'build/less/.csslintrc'
@@ -131,6 +132,14 @@ module.exports = function (grunt) {
       dist: [
         'dist/css/AdminLTE.css',
       ]
+    },
+
+    // Validate Bootstrap HTML
+    bootlint: {
+      options: {
+        relaxerror: ['W005']
+      },
+      files: ['pages/**/*.html', '*.html']
     },
 
     // Delete images in build directory
@@ -159,6 +168,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   // Lint CSS
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  // Lint Bootstrap
+  grunt.loadNpmTasks('grunt-bootlint');
+
+  // Linting task
+  grunt.registerTask('lint', ['jshint', 'csslint', 'bootlint']);
 
   // The default task (running "grunt" in console) is "watch"
   grunt.registerTask('default', ['watch']);

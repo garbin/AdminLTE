@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>AdminLTE 2 | Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Buttons</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -24,7 +25,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-blue sidebar-mini">
+  <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
       <header class="main-header">
@@ -251,15 +252,17 @@
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
+                    <div class="row">
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Followers</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Sales</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Friends</a>
+                      </div>
+                    </div><!-- /.row -->
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
@@ -402,6 +405,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
                 <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
                 <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
                 <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
@@ -480,52 +484,52 @@
                       <th>Disabled <code>.disabled</code></th>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-default">Default</button></td>
-                      <td><button class="btn btn-block btn-default btn-lg">Default</button></td>
-                      <td><button class="btn btn-block btn-default btn-sm">Default</button></td>
-                      <td><button class="btn btn-block btn-default btn-xs">Default</button></td>
-                      <td><button class="btn btn-block btn-default btn-flat">Default</button></td>
-                      <td><button class="btn btn-block btn-default disabled">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default btn-lg">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default btn-sm">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default btn-xs">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default btn-flat">Default</button></td>
+                      <td><button type="button" class="btn btn-block btn-default disabled">Default</button></td>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-primary">Primary</button></td>
-                      <td><button class="btn btn-block btn-primary btn-lg">Primary</button></td>
-                      <td><button class="btn btn-block btn-primary btn-sm">Primary</button></td>
-                      <td><button class="btn btn-block btn-primary btn-xs">Primary</button></td>
-                      <td><button class="btn btn-block btn-primary btn-flat">Primary</button></td>
-                      <td><button class="btn btn-block btn-primary disabled">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary btn-lg">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary btn-sm">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary btn-xs">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary btn-flat">Primary</button></td>
+                      <td><button type="button" class="btn btn-block btn-primary disabled">Primary</button></td>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-success">Success</button></td>
-                      <td><button class="btn btn-block btn-success btn-lg">Success</button></td>
-                      <td><button class="btn btn-block btn-success btn-sm">Success</button></td>
-                      <td><button class="btn btn-block btn-success btn-xs">Success</button></td>
-                      <td><button class="btn btn-block btn-success btn-flat">Success</button></td>
-                      <td><button class="btn btn-block btn-success disabled">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success btn-lg">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success btn-sm">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success btn-xs">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success btn-flat">Success</button></td>
+                      <td><button type="button" class="btn btn-block btn-success disabled">Success</button></td>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-info">Info</button></td>
-                      <td><button class="btn btn-block btn-info btn-lg">Info</button></td>
-                      <td><button class="btn btn-block btn-info btn-sm">Info</button></td>
-                      <td><button class="btn btn-block btn-info btn-xs">Info</button></td>
-                      <td><button class="btn btn-block btn-info btn-flat">Info</button></td>
-                      <td><button class="btn btn-block btn-info disabled">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info btn-lg">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info btn-sm">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info btn-xs">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info btn-flat">Info</button></td>
+                      <td><button type="button" class="btn btn-block btn-info disabled">Info</button></td>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-danger">Danger</button></td>
-                      <td><button class="btn btn-block btn-danger btn-lg">Danger</button></td>
-                      <td><button class="btn btn-block btn-danger btn-sm">Danger</button></td>
-                      <td><button class="btn btn-block btn-danger btn-xs">Danger</button></td>
-                      <td><button class="btn btn-block btn-danger btn-flat">Danger</button></td>
-                      <td><button class="btn btn-block btn-danger disabled">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger btn-lg">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger btn-sm">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger btn-xs">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger btn-flat">Danger</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger disabled">Danger</button></td>
                     </tr>
                     <tr>
-                      <td><button class="btn btn-block btn-warning">Warning</button></td>
-                      <td><button class="btn btn-block btn-warning btn-lg">Warning</button></td>
-                      <td><button class="btn btn-block btn-warning btn-sm">Warning</button></td>
-                      <td><button class="btn btn-block btn-warning btn-xs">Warning</button></td>
-                      <td><button class="btn btn-block btn-warning btn-flat">Warning</button></td>
-                      <td><button class="btn btn-block btn-warning disabled">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning btn-lg">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning btn-sm">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning btn-xs">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning btn-flat">Warning</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning disabled">Warning</button></td>
                     </tr>
                   </table>
                 </div><!-- /.box -->
@@ -540,9 +544,9 @@
                   <h3 class="box-title">Block Buttons</h3>
                 </div>
                 <div class="box-body">
-                  <button class="btn btn-default btn-block">.btn-block</button>
-                  <button class="btn btn-default btn-block btn-flat">.btn-block .btn-flat</button>
-                  <button class="btn btn-default btn-block btn-sm">.btn-block .btn-sm</button>
+                  <button type="button" class="btn btn-default btn-block">.btn-block</button>
+                  <button type="button" class="btn btn-default btn-block btn-flat">.btn-block .btn-flat</button>
+                  <button type="button" class="btn btn-default btn-block btn-sm">.btn-block .btn-sm</button>
                 </div>
               </div><!-- /.box -->
 
@@ -798,7 +802,7 @@
                   <div class="input-group margin">
                     <input type="text" class="form-control">
                     <span class="input-group-btn">
-                      <button class="btn btn-info btn-flat" type="button">Go!</button>
+                      <button type="button" class="btn btn-info btn-flat">Go!</button>
                     </span>
                   </div><!-- /input-group -->
                 </div><!-- /.box-body -->
@@ -1081,19 +1085,19 @@
                   here but that's only to make the content
                   display correctly without having to use a table-->
                   <p>
-                    <button class="btn bg-maroon btn-flat margin">.btn.bg-maroon.btn-flat</button>
-                    <button class="btn bg-purple btn-flat margin">.btn.bg-purple.btn-flat</button>
-                    <button class="btn bg-navy btn-flat margin">.btn.bg-navy.btn-flat</button>
-                    <button class="btn bg-orange btn-flat margin">.btn.bg-orange.btn-flat</button>
-                    <button class="btn bg-olive btn-flat margin">.btn.bg-olive.btn-flat</button>
+                    <button type="button" class="btn bg-maroon btn-flat margin">.btn.bg-maroon.btn-flat</button>
+                    <button type="button" class="btn bg-purple btn-flat margin">.btn.bg-purple.btn-flat</button>
+                    <button type="button" class="btn bg-navy btn-flat margin">.btn.bg-navy.btn-flat</button>
+                    <button type="button" class="btn bg-orange btn-flat margin">.btn.bg-orange.btn-flat</button>
+                    <button type="button" class="btn bg-olive btn-flat margin">.btn.bg-olive.btn-flat</button>
                   </p>
 
                   <p>
-                    <button class="btn bg-maroon margin">.btn.bg-maroon</button>
-                    <button class="btn bg-purple margin">.btn.bg-purple</button>
-                    <button class="btn bg-navy margin">.btn.bg-navy</button>
-                    <button class="btn bg-orange margin">.btn.bg-orange</button>
-                    <button class="btn bg-olive margin">.btn.bg-olive</button>
+                    <button type="button" class="btn bg-maroon margin">.btn.bg-maroon</button>
+                    <button type="button" class="btn bg-purple margin">.btn.bg-purple</button>
+                    <button type="button" class="btn bg-navy margin">.btn.bg-navy</button>
+                    <button type="button" class="btn bg-orange margin">.btn.bg-orange</button>
+                    <button type="button" class="btn bg-olive margin">.btn.bg-olive</button>
                   </p>
                 </div>
               </div><!-- /.box -->
@@ -1326,7 +1330,7 @@
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.2.1
+          <b>Version</b> 2.3.0
         </div>
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
